@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600i,900|Roboto:300,400,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #303030;
+
+}
+html {
+    background: #000;
+}
+body {
+    height: 800px;
+    background: #eeeeee;
+    margin: 0 auto;
+    padding: 0 150px;
+    background-image: url('../img/bg_gradient.png');
+     -webkit-background-size: cover;
+    background-size: cover;
+}
+header {
+    padding: 48px 0;
+    width: 100%;
+    font-size: 0;
+}
+header * {
+    display: inline-block;
+}
+
+.logo {
+    width: 45%;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: .83;
+
+}
+nav {
+    width: 55%;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+nav :nth-child(2) {
+    margin: 0 50px;
+}
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover {
+    color: #e10011;
+}
+
+
+
+
+.slider {
+    width: 100%;
+    font-size: 0;
+    margin-top: 50px;
+}
+.slide > * {
+    display: inline-block;
+    width: 50%;
+}
+.description {
+    text-align: right;
+}
+.description h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.description p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+.image {
+    padding-left: 20px;
+    vertical-align: top;
+}
+.image img {
+
+    margin-left: 30px;
+}
+h2 ~ p {
+    margin: 30px 0;
+}
+.description :nth-child(3) {
+    color: #e10011;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;}
+
+body {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.redfont {
+    color: #F35A48;
+}
+
+/* HEADER*/
+
+header>div, main>div {
+    box-sizing: border-box; 
+    padding: 10px;
+    min-height: 100px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+header, main {
+    overflow: hidden;
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    box-shadow: 10px 5px 20px #000000;
+}
+/* LOGO */
+
+.logo {
+    float: left;
+    width: 200px;
+    background: #fde9f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 130px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+/* END LOGO */
+/* CONTACTS */
+.contacts {
+    float: right;
+    width: 30%;
+    background: #ffead0;
+}
+/* END CONTACTS *
+/* CONTENT */
+
+.content {
+    margin-right: 20%;
+    margin-left: 200px;
+    background: #c8eaf5;
+}
+
+/* END CONTENT */
+/* END HEADER*/
+
+/* MAIN*/
+/* COLUMN LEFT*/
+
+.column-left {
+    background: #A0A8FF;
+    width: 50%;
+}
+/* END COLUMN LEFT*/
+
+/* COLUMN RIGHT*/
+
+.column-right {
+    float: right;
+    background: #FFB8AF;
+    width: 50%;
+}
+
+/* SKILLS*/
+.scale {
+    margin: 15px;
+}
+
+.scale>div {
+    display: inline-block;
+}
+
+.scale i, .scale img {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+.strip {
+    width: 200px;
+    height: 20px;
+    background-color: #fff;
+}
+.strip div {
+    background-color: #FF0000;
+    height: 20px;
+}
+
+.skill-html {
+    width: 80%;
+}
+
+.skill-css {
+    width: 75%;
+}
+
+.skill-js {
+    width: 30%;
+}
+
+.skill-php {
+    width: 40%;
+}
+
+.skill-databases {
+    width: 30%;
+}
+
+.skill-ua {
+    width: 90%;
+}
+.skill-rus {
+    width: 90%;
+}
+.skill-en {
+    width: 40%;
+}
+/* END SKILLS*/
+
+/* END COLUMN RIGHT*/
+/* END MAIN*/

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background: #000;
+}
+body {
+    background: #3399CC;
+    max-width: 938px;
+    min-height: 600px;
+    margin: auto;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    border: 18px solid #27759D;
+    color: #FFFFFF;
+}
+main {
+     background: #3399CC;
+     max-width: 628px;
+     margin: 0 auto;
+ }
+.headline {
+    height: 62px;
+    font-size: 20px;
+}
+.headline * {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+.headline i {
+    margin-left: 10px;
+    font-size: 24px;
+}
+ul {
+    width: 100%;
+    height: 400px;
+    background: #FFFFFF;
+    font-size: 0;
+    padding: 2px;
+    overflow: auto;
+}
+ul + p {
+    height: 50px;
+    display: inline;
+    line-height: 50px;
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+    width: 25%;
+    height: 25%;
+    background: #a31bff;
+    vertical-align: top;
+    border: 2px solid #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+ul > :nth-child(1), ul > :nth-child(9) {
+    width: 50%;
+}
+ul > :nth-child(11) {
+    width: 100%;
+    background: rgba(102,102,153,1);
+}
+ul > :nth-child(11):hover {
+    background: rgba(102,102,153,.8);
+}
+
+/*
+BACKGROUND FOR LI
+*/
+ul > :nth-child(1) {
+    background: rgba(51,153,204,1);
+}
+ul > :nth-child(2) {
+    background: rgba(51,204,204,1);
+}
+ul > :nth-child(3) {
+    background: rgba(153,102,153,1);
+}
+ul > :nth-child(4) {
+    background: rgba(194,71,71,1);
+}
+ul > :nth-child(5) {
+    background: rgba(226,103,74,1);
+}
+ul > :nth-child(6) {
+    background: rgba(255,204,102,1);
+}
+ul > :nth-child(7) {
+    background: rgba(153,204,153,1);
+}
+ul > :nth-child(8) {
+    background: rgba(102,153,153,1);
+}
+ul > :nth-child(9) {
+    background: rgba(204,102,153,1);
+}
+ul > :nth-child(10) {
+    background: rgba(51,153,102,1);
+}
+
+ul > :nth-child(1):hover {
+    background: rgba(51,153,204,.75);
+}
+ul > :nth-child(2):hover {
+    background: rgba(51,204,204,.75);
+}
+ul > :nth-child(3):hover {
+    background: rgba(153,102,15,.75);
+}
+ul > :nth-child(4):hover {
+    background: rgba(194,71,71,.75);
+}
+ul > :nth-child(5):hover {
+    background: rgba(226,103,74,.75);
+}
+ul > :nth-child(6):hover {
+    background: rgba(255,204,10,.75);
+}
+ul > :nth-child(7):hover {
+    background: rgba(153,204,15,.75);
+}
+ul > :nth-child(8):hover {
+    background: rgba(102,153,15,.75);
+}
+ul > :nth-child(9):hover {
+    background: rgba(204,102,15,.75);
+}
+ul > :nth-child(10):hover {
+    background: rgba(51,153,102,.75);
+}
+/*
+END BACKGROUND
+*/
+li > span, li > p {
+    display: block;
+    margin: auto;
+}
+li > span {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+li p * {
+    display: inline-block;
+    vertical-align: middle;
+    color: #DFEFDE;
+}
+li p span {
+    font-size: 16px;
+}
+li p i {
+    font-size: 25px;
+}
