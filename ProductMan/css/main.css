@@ -1,99 +1,234 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600i,900|Roboto:300,400,700,900');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', Arial, sans-serif;
-    color: #303030;
-
-}
-html {
-    background: #000;
-}
 body {
-    height: 800px;
-    background: #eeeeee;
-    margin: 0 auto;
-    padding: 0 150px;
-    background-image: url('../img/bg_gradient.png');
-     -webkit-background-size: cover;
-    background-size: cover;
+    background: #f0f1f2;
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
-header {
-    padding: 48px 0;
-    width: 100%;
-    font-size: 0;
-}
-header * {
-    display: inline-block;
-}
-
-.logo {
-    width: 45%;
+.logo, h1 {
+    font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 900;
-    line-height: .83;
-
 }
-nav {
-    width: 55%;
-    text-align: right;
+.inner {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+header {
+    line-height: 135px;
+    height: 135px;
+}
+header nav {
+    float: right;
+}
+header ul {
+    margin: 0;
+    padding: 0;
+}
+header li {
+    display: inline-block;
+    margin-left: 30px;
+}
+ul a {
     font-size: 18px;
     font-weight: 400;
 }
-nav :nth-child(2) {
-    margin: 0 50px;
+main .inner {
+    background: url("../img/headphones.png") top right no-repeat;
+    background-position-x: 348px;
+}
+.s1 > div {
+    width: 52%;
+    text-align: right;
+}
+.s1 h1 {
+    font-size: 150px;
+    line-height: 150px;
+    text-transform: uppercase;
+    margin: 52px 0 0;
+    letter-spacing: 4px;
+}
+
+.s1 p {
+    font-weight: 300;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+.s1 a {
+    font-weight: 700;
+}
+.logo {
+    font-family: 'Roboto', sans-serif;
 }
 a {
-    font-size: 18px;
+    color: #303030;
     text-decoration: none;
 }
 a:hover {
     color: #e10011;
 }
-
-
-
-
-.slider {
-    width: 100%;
-    font-size: 0;
-    margin-top: 50px;
+.s1 ul {
+    text-align: center;
+    margin-top: 70px;
+    margin-right: 38px;
 }
-.slide > * {
+.s1 li {
     display: inline-block;
-    width: 50%;
+    background: #303030;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    margin: 1px;
 }
-.description {
-    text-align: right;
+.s1 li:hover {
+    background: #e10011;
 }
-.description h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    font-size: 120px;
-    line-height: 1;
-    text-transform: uppercase;
-}
-.description p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 22px;
-}
-.image {
-    padding-left: 20px;
-    vertical-align: top;
-}
-.image img {
 
-    margin-left: 30px;
+
+.featuredProduct {
+    width: 1200px;
+    height: 1200px;
+    background: #ffffff;
+    margin: 64px auto;
+    border-radius: 10px;
 }
-h2 ~ p {
-    margin: 30px 0;
+.featuredProduct > div {
+    text-align: center;
 }
-.description :nth-child(3) {
-    color: #e10011;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
+.featuredProduct h1 {
+    margin: 0;
+    padding-top: 97px;
 }
+.featuredProduct p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 600px;
+    margin: 8px auto;
+    letter-spacing: .45px;
+}
+.featuredProduct > div img {
+    display: block;
+    margin: auto;
+}
+.featuredProduct ul {
+    padding: 0;
+    width: 1094px;
+    height: 848px;
+    margin: 52px auto;
+    font-size: 0;
+}
+.featuredProduct ul li {
+    display: inline-block;
+    width: 328px;
+    height: 388px;
+    margin: 18px;
+    border-radius: 5px;
+}
+.featuredProduct ul :first-child {
+    width: 692px;
+    background-image: url("../img/first.png");
+}
+.featuredProduct ul :nth-child(2) {
+    background-image: url("../img/second.png");
+}
+.featuredProduct ul :nth-child(3) {
+    background-image: url("../img/third.png");
+}
+.featuredProduct ul :nth-child(4) {
+    background-image: url("../img/fourth.png");
+}
+.featuredProduct ul :nth-child(5) {
+    background-image: url("../img/fifth.png");
+}
+.featuredProduct li:hover {
+    background-image: url("../img/hoverImg.jpg");
+}
+.featuredProduct ul :first-child:hover {
+    background: #e10011;
+}
+.news {
+    width: 1100px;
+    margin: 0 auto;
+}
+.news > * {
+    text-align: center;
+    margin: 0 auto;
+}
+.news h1 {
+    text-transform: uppercase;
+
+    margin-top: 75px;
+}
+.news p {
+    width: 600px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 250px;
+    margin-top: 5px;
+    letter-spacing: 0;
+}
+.news form {
+    font-size: 0;
+    margin-top: 34px;
+}
+.news form * {
+    display: inline-block;
+    border: 0;
+}
+.news input {
+    box-sizing: border-box;
+    width: 496px;
+    height: 70px;
+    font-size: 18px;
+    border-radius: 37px 0 0 37px;
+    background: #ffffff;
+    padding-left: 67px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #979797;
+}
+.news button {
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+    background: #e10011;
+    text-transform: uppercase;
+    width: 205px;
+    height: 70px;
+    border-radius: 0 37px 37px 0;
+}
+
+footer {
+    width: 1100px;
+    margin: 0 auto;
+}
+footer ul {
+    margin-top: 105px;
+    margin-left: 334px;
+}
+footer li {
+    display: inline-block;
+    margin: 6px;
+}
+footer p {
+    margin: 0 auto;
+    text-align: center;
+    color: #979797;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    padding-top: 21px;
+}
+footer span {
+    color: #303030;
+}
+
