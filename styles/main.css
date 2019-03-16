@@ -3,9 +3,11 @@
 body {
     font: 16px/1.5 'Nunito Sans', Arial, sans-serif;
     color: darkblue;
+    background: url("../img/background.gif");
+    background-size: cover;
 }
 header, main {
-    width: 80%;
+    width: 70%;
     background: #d3d3d3;
     margin: 0 auto;
 }
@@ -85,6 +87,8 @@ article > * {
 }
 article div {
     margin: 0 20px;
+    width: 50%;
+    padding: 0 20px;
 }
 a {
     text-decoration: none;
@@ -92,4 +96,7 @@ a {
 }
 a:hover {
     color: #ff0511;
+}
+article h1 {
+    margin: 0;
 }
