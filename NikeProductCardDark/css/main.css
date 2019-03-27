@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'MuseoSansRounded';
+    src: url('../fonts/museosansrounded-100-webfont.woff2') format('woff2'),
+    url('../fonts/museosansrounded-100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoSansRounded', sans-serif;
+}
+body {
+    /*position: relative;*/
+    background: url("../img/main bg.jpg") no-repeat;
+    background-size: cover;
+}
+.dib {
+    display: inline-block;
+    vertical-align: top;
+}
+main {
+    position: absolute;
+    margin: auto;
+    width: 686px;
+    height: 391px;
+    background: #111a28;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: -10px -10px 40px black, 10px 10px 40px black;
+}
+.logo {
+    padding-top: 16px;
+    padding-left: 28px;
+}
+.slider {
+    font-size: 0;
+    position: relative;
+}
+.picture {
+    width: 400px;
+    text-align: center;
+    padding: 65px 0;
+}
+.color-selection {
+    position: absolute;
+    bottom: -20px;
+    left: 180px;
+}
+.color-selection__input {
+    display: none;
+}
+.color-selection__label {
+    float: right;
+    margin: 0 3px;
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #111a28;
+}
+.color-selection__label_first {
+    background: #29e3ea;
+}
+.color-selection__label_second {
+    background: #ed3333;
+}
+.color-selection__label_third {
+    background: #FFFFFF;
+}
+.color-selection__label_forth {
+    background: #1f273f;
+}
+.color-selection__input:checked + label,
+.color-selection__label:hover {
+    border: 2px solid #4f5660;
+}
+.product-info {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 235px;
+    font-size: 14px;
+}
+.product-info__header,
+.product-info__description {
+    line-height: 26px;
+}
+.product-info__header {
+    color: #e1e1e1;
+    font-size: 24px;
+    width: 220px;
+    /*padding-top: 20px;*/
+}
+.product-info__description {
+    color: #49505a;
+    width: 170px;
+    height: 30px;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.stars {
+    /*height: 20px;*/
+    padding: 18px 0;
+    width: 70px;
+}
+.stars__input,
+.size__input {
+    display: none;
+}
+.stars__label {
+    float: right;
+    margin: 0 1px;
+    width: 12px;
+    height: 12px;
+    background: url("../img/star_grey.png");
+    cursor: pointer;
+
+}
+.stars__input:checked ~ label,
+.stars__label:hover,
+.stars__label:hover ~ label {
+    background: url("../img/star_ellow.png");
+}
+
+.size, .qty {
+    margin-top: 20px;
+}
+.size__select,
+.qty__select {
+    border-radius: 0;
+    background: transparent;
+    width: 69px;
+    height: 32px;
+    padding-left: 15px;
+    border: 1px solid #49505a;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-appearance: none;
+    color: #49505a;
+    text-align: center;
+    outline: none;
+}
+.size, .qty {
+    height: 32px;
+    background: url("../img/arrow.png") no-repeat right;
+    background-position-x: 90%;
+    width: 69px;
+}
+.select-placeholder {
+    padding-left: 20px;
+}
+.button-add {
+    border: 1px solid #49505a;
+    width: 184px;
+    height: 40px;
+    color: #49505a;
+    background: transparent;
+    margin-top: 29px;
+    font-size: 14px;
+}
+.button-add:hover,
+.size:hover,
+.qty:hover {
+    background: #202835;
+    cursor: pointer;
+}

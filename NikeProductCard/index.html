@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nike Product Card</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<main class="main">
+    <div class="inner">
+        <header class="header">
+            <a href="#" class="dib">
+                <img class="logo__img" src="img/logo.png" alt="">
+            </a>
+            <nav class="menu dib">
+                <a class="menu__item menu__item_first" href="#">LIFESTYLE</a>
+                <a class="menu__item" href="#">RUNNING</a>
+                <a class="menu__item" href="#">FOOTBALL</a>
+                <a class="menu__item menu__item_last" href="#">SKATEBOARDING</a>
+            </nav>
+            <div class="settings dib">
+                <img src="img/btn_menu.png" alt="">
+            </div>
+        </header>
+        <section class="slider">
+            <div class="slider__img dib">
+                <div class="preview">
+                    <img class="preview__img" src="img/img1.jpg" alt="">
+                    <img class="preview__img" src="img/img2.jpg" alt="">
+                    <img class="preview__img" src="img/img3.jpg" alt="">
+                </div>
+            </div>
+            <section class="product-info dib">
+                <form action="/" class="btn-close">
+                    <button class="btn-close__btn"></button>
+                </form>
+                <div class="label-new">NEW</div>
+                <h2 class="product-info__header">THE
+                    <span class="c-blue">RUNNING</span>
+                    <br>
+                    HAS JUST BEGUN
+                </h2>
+                <div class="rating">
+                    <h3 class="rating__header dib">Huarache</h3>
+                    <form action="/" class="stars dib">
+                        <input class="stars__input" type="radio" name="star" id="star-1">
+                        <label class="stars__label" for="star-1"></label>
+                        <input class="stars__input" type="radio" name="star" id="star-2" checked>
+                        <label class="stars__label" for="star-2"></label>
+                        <input class="stars__input" type="radio" name="star" id="star-3">
+                        <label class="stars__label" for="star-3"></label>
+                        <input class="stars__input" type="radio" name="star" id="star-4" >
+                        <label class="stars__label" for="star-4"></label>
+                        <input class="stars__input" type="radio" name="star" id="star-5">
+                        <label class="stars__label" for="star-5"></label>
+                    </form>
+                </div>
+                <div class="price">
+                    <span class="price__currency">&#36;</span>
+                    <span class="price__value">200</span>
+                </div>
+                <div class="size">
+                    <h3 class="size__header">Size</h3>
+                    <form action="/" class="size_values">
+                        <input class="size__input" type="radio" name="size" id="size-1">
+                        <label class="size__label size__label_first" for="size-1">7</label>
+                        <input class="size__input" type="radio" name="size" id="size-2">
+                        <label class="size__label" for="size-2">8</label>
+                        <input class="size__input" type="radio" name="size" id="size-3">
+                        <label class="size__label" for="size-3">9</label>
+                        <input class="size__input" type="radio" name="size" id="size-4" checked>
+                        <label class="size__label" for="size-4">10</label>
+                        <input class="size__input" type="radio" name="size" id="size-5">
+                        <label class="size__label size__label_last" for="size-5">11</label>
+                    </form>
+                </div>
+                <form action="/" class="buttons">
+                    <button class="button__add">ADD TO CART</button>
+                    <button class="button__wish">WISHLIST</button>
+                </form>
+            </section>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>
