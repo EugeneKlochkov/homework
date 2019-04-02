@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Hans Kendrick';
+    src: url('fonts/hanskendrick-regular-webfont.woff2') format('woff2'),
+    url('fonts/hanskendrick-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background: #e2e7ec;
+}
+
+.inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.row {
+    font-size: 0;
+}
+
+[class^=col] {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.col-2 {
+    width: calc(100% / 2);
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+
+.col-3-2 {
+    width: calc(100% / 1.5);
+}
+
+.content {
+    background: #FFFFFF;
+    height: 540px;
+    font-family: 'Hans Kendrick', sans-serif;
+    overflow: hidden;
+
+}
+
+.content_block1 {
+    background: url("img/bg_block_1.jpg") no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.date {
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #818181;
+    text-transform: uppercase;
+}
+
+.h {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+
+.content_block1 .h {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 32px;
+    left: 44px;
+    width: 500px;
+    font-size: 30px;
+}
+
+.content_block1 p {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+}
+.content__info {
+    padding: 20px 28px;
+}
+.icon {
+    padding-top: 63px;
+}
+.loader {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 67px;
+    padding-left: 40px;
+}
+.loader span {
+    font-family: 'Hans Kendrick', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+.loader * {
+    display: inline-block;
+}
+.loader img {
+    vertical-align: middle;
+}
