@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/miso-webfont.woff2') format('woff2'),
+    url('../fonts/miso-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/miso-bold-webfont.woff2') format('woff2'),
+    url('../fonts/miso-bold-webfont.woff') format('woff');
+    font-weight: 900;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #fdde7e;
+    padding: 50px 15px;
+    /*размещение блоков block*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.block {
+    background: #ffffff;
+    width: 30%;
+    height: 440px;
+    font-family: 'Miso', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    /*расположение контенте внутри блоков block*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*padding: 30px;*/
+}
+.block_center {
+    height: 500px;
+}
+.block > * {
+    overflow: hidden;
+}
+.block__price {
+    font-weight: 900;
+    color: #02995b;
+    font-size: 70px;
+    margin-top: 28px;
+}
+.block__number {
+    display: inline-block;
+}
+.block__img {
+    margin-top: 10px;
+    padding-left: 16px;
+}
+.block__name {
+    margin-top: 23px;
+    font-size: 54px;
+    font-weight: 300;
+}
+.block__stock {
+    margin-top: 18px;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    width: 58%;
+}
+.block_center .block__price {
+    margin-top: 40px;
+}
+.block_center .block__img {
+    margin-top: 28px;
+}
+.block_center .block__name {
+    margin-top: 33px;
+}
+.block_center .block__stock {
+    margin-top: 18px;
+}
