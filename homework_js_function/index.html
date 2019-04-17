@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<form action="/" method="post" onsubmit="valid(this)">-->
+    <p>Введите интервал для вычислений</p>
+    <label style="margin: 10px; display: block;">Минимум:
+        <input type="text" id="min" name="min" placeholder="2">
+    </label>
+    <label style="margin: 10px; display: block;">Максимум:
+        <input type="text" id="max" placeholder="50">
+    </label>
+    <input type="button" value="Вывести простые числа" id="btn">
+<!--</form>
+<script>
+    function valid(form) {
+        var error = false;
+        var min = form.min.value;
+        if (min == '' || min < 2) {
+            error = 'Должно быть min > 2';
+            if (error) {
+                alert(error);
+                return false;
+            }
+        } else {
+            return true;
+        }
+    }
+</script>-->
+<script src="main.js"></script>
+</body>
+</html>
