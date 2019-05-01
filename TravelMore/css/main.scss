@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:400,700');
+
+$white: #fff;
+$blue: #5474fd;
+$lightgray: #ccc;
+$gray: #333333;
+$JosefinSansRegular: 400 16px/26px 'Josefin Sans', Arial, sans-serif;
+$Aleo: 16px/26px 'Aleo', 'Times New Roman', serif;
+
+%logo {
+  text-transform: uppercase;
+}
+
+%btn {
+  height: 60px;
+  background: $blue;
+  color: $white;
+  text-transform: uppercase;
+  font: $Aleo;
+  font-size: .875rem;
+  border: 2px solid $blue;
+  text-align: center;
+
+  &:hover {
+    opacity: .8;
+    cursor: pointer;
+  }
+
+}
+
+/*Очистка от float*/
+.clear:before, .clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*Сетка*/
+.row {
+  font-size: 0;
+}
+
+.row [class^=col] {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  //word-break: break-all;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+/*Сетка конец*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: $JosefinSansRegular;
+  color: $white;
+}
+
+body {
+  //padding-top: 15px;
+}
+
+#magnifier {
+  fill: #5474fd;
+}
+
+#check-mark {
+  fill: #ff6363;
+}
+
+#ok {
+  fill: #00a2ff;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    cursor: pointer;
+    color: $lightgray;
+  }
+}
+
+.btn {
+  @extend %btn;
+
+  &_search {
+    border-color: $white;
+
+    * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    span {
+      padding-left: 17px;
+      letter-spacing: 1.3px;
+    }
+
+    img {
+      margin-left: 10px;
+    }
+
+    width: 150px;
+  }
+
+  &_main {
+    margin-top: 43px;
+    width: 226px;
+  }
+
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1138px;
+  padding: 0 15px;
+}
+
+.header {
+  background: $blue;
+}
+
+.header__content {
+  background: url("../img/header_img.jpg") no-repeat 50%;
+  background-size: cover;
+  text-align: center;
+  height: 740px;
+}
+
+.logo-slogan {
+  padding-top: 278px;
+  &_footer {
+    padding-top: 118px;
+    text-align: center;
+  }
+
+  .logo {
+    @extend %logo;
+    font-size: 3.1rem;
+    display: inline-block;
+    letter-spacing: 2px;
+    &_footer {
+      font-size: 1.5rem;
+    }
+  }
+
+  .slogan {
+    font-size: 1.375rem;
+    letter-spacing: 5.3px;
+    padding-top: 8px;
+    &_footer {
+      padding-top: 3px;
+      font-size: 1rem;
+      letter-spacing: .5px;
+    }
+  }
+
+}
+
+.search {
+  font-size: 0;
+  padding-top: 45px;
+
+  &__text {
+    width: 37%;
+    height: 60px;
+    border: 1px solid $white;
+    text-align: center;
+    font-size: 1rem;
+    vertical-align: top;
+    font: $JosefinSansRegular;
+    letter-spacing: .8px;
+
+  }
+}
+
+.scroll {
+  padding-top: 114px;
+  &:hover {
+    text-shadow: 0 0 2px $white;
+  }
+  p {
+    letter-spacing: 1.2px;
+  }
+}
+
+.nav {
+  height: 80px;
+  padding-top: 28px;
+
+  .logo_nav {
+    @extend %logo;
+    font-size: 1.5rem;
+    float: left;
+  }
+
+  .menu {
+    float: right;
+    text-align: right;
+    font-size: .875rem;
+
+    a:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      text-transform: uppercase;
+      margin-left: 36px;
+    }
+  }
+}
+
+.choose {
+  background: url("../img/castle.jpg") no-repeat 50% $gray;
+  background-size: cover;
+  height: 686px;
+
+  .description {
+    font-size: 1rem;
+    padding-right: 20px;
+
+    h2 {
+      padding-top: 207px;
+      font: $Aleo;
+      font-size: 2.25rem;
+    }
+
+    p:nth-of-type(1) {
+      padding-top: 62px;
+    }
+
+    p:nth-of-type(2) {
+      padding-top: 26px;
+    }
+  }
+
+  .preview__1 {
+    padding-left: 80px;
+    padding-top: 120px;
+    text-align: left;
+  }
+
+  .preview__2 {
+    text-align: right;
+  }
+}
+
+.work {
+  height: 336px;
+  background: url("../img/Shape 1.svg") no-repeat 50% 18% $gray;
+  padding-top: 100px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .box {
+    text-align: center;
+
+    .svg {
+      display: inline-block;
+      margin: 0 auto;
+
+      svg {
+        background: $gray;
+      }
+    }
+
+    p {
+      font: $Aleo;
+      font-size: 2.25rem;
+      padding-top: 25px;
+    }
+  }
+}
+
+.section {
+  & > * {
+    height: 700px;
+  }
+
+  .house {
+    background: url("../img/smart-house.jpg") no-repeat 50% $gray;
+  }
+
+  .cape {
+    background: url("../img/cape.jpg") no-repeat 50% $gray;
+  }
+
+  .row {
+    padding-top: 229px;
+  }
+
+  .description {
+    font-size: 1rem;
+    background: $gray;
+    opacity: 0.9;
+    padding: 47px 30px;
+
+    &_house {
+      margin-right: 15px;
+    }
+
+    &_cape {
+      margin-left: 15px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    :nth-child(2) {
+      padding-top: 25px;
+    }
+
+    p {
+      padding-top: 18px;
+    }
+  }
+}
+
+.testimonial {
+  height: 733px;
+  background: url("../img/man.jpg") no-repeat 50% $gray;
+
+  h1 {
+    font: $Aleo;
+    font-size: 2.25rem;
+    padding-top: 123px;
+    padding-bottom: 98px;
+    text-align: center;
+  }
+
+  .review {
+    font-size: 0;
+    height: 284px;
+
+    & > * {
+      display: inline-block;
+    }
+
+    &__text {
+      width: 59%;
+      height: 100%;
+      vertical-align: top;
+      font-size: 1rem;
+      background: $gray;
+      opacity: .9;
+      padding: 48px 40px 48px 60px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    p {
+      padding-top: 38px;
+      word-break: break-all;
+      letter-spacing: -1px;
+    }
+
+    i {
+      position: relative;
+      top: -12px;
+      float: left;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      margin-right: 8px;
+      color: $blue;
+      font-size: 1.25rem;
+
+    }
+  }
+}
+.footer {
+  height: 300px;
+  background: $gray;
+  .nav-society {
+    width: 160px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    a:hover {
+      color: $blue;
+    }
+  }
+}

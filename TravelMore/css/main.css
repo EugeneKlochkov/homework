@@ -1,0 +1,344 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:400,700");
+.nav .logo_nav, .logo-slogan .logo {
+  text-transform: uppercase;
+}
+
+.btn {
+  height: 60px;
+  background: #5474fd;
+  color: #fff;
+  text-transform: uppercase;
+  font: 16px/26px "Aleo", "Times New Roman", serif;
+  font-size: 0.875rem;
+  border: 2px solid #5474fd;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/*Очистка от float*/
+.clear:before, .clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*Сетка*/
+.row {
+  font-size: 0;
+}
+
+.row [class^=col] {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+/*Сетка конец*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 400 16px/26px "Josefin Sans", Arial, sans-serif;
+  color: #fff;
+}
+
+#magnifier {
+  fill: #5474fd;
+}
+
+#check-mark {
+  fill: #ff6363;
+}
+
+#ok {
+  fill: #00a2ff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.btn_search {
+  border-color: #fff;
+  width: 150px;
+}
+.btn_search * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn_search span {
+  padding-left: 17px;
+  letter-spacing: 1.3px;
+}
+.btn_search img {
+  margin-left: 10px;
+}
+.btn_main {
+  margin-top: 43px;
+  width: 226px;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1138px;
+  padding: 0 15px;
+}
+
+.header {
+  background: #5474fd;
+}
+
+.header__content {
+  background: url("../img/header_img.jpg") no-repeat 50%;
+  background-size: cover;
+  text-align: center;
+  height: 740px;
+}
+
+.logo-slogan {
+  padding-top: 278px;
+}
+.logo-slogan_footer {
+  padding-top: 118px;
+  text-align: center;
+}
+.logo-slogan .logo {
+  font-size: 3.1rem;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+.logo-slogan .logo_footer {
+  font-size: 1.5rem;
+}
+.logo-slogan .slogan {
+  font-size: 1.375rem;
+  letter-spacing: 5.3px;
+  padding-top: 8px;
+}
+.logo-slogan .slogan_footer {
+  padding-top: 3px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.search {
+  font-size: 0;
+  padding-top: 45px;
+}
+.search__text {
+  width: 37%;
+  height: 60px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: top;
+  font: 400 16px/26px "Josefin Sans", Arial, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.scroll {
+  padding-top: 114px;
+}
+.scroll:hover {
+  text-shadow: 0 0 2px #fff;
+}
+.scroll p {
+  letter-spacing: 1.2px;
+}
+
+.nav {
+  height: 80px;
+  padding-top: 28px;
+}
+.nav .logo_nav {
+  font-size: 1.5rem;
+  float: left;
+}
+.nav .menu {
+  float: right;
+  text-align: right;
+  font-size: 0.875rem;
+}
+.nav .menu a:first-child {
+  margin-left: 0;
+}
+.nav .menu a {
+  text-transform: uppercase;
+  margin-left: 36px;
+}
+
+.choose {
+  background: url("../img/castle.jpg") no-repeat 50% #333333;
+  background-size: cover;
+  height: 686px;
+}
+.choose .description {
+  font-size: 1rem;
+  padding-right: 20px;
+}
+.choose .description h2 {
+  padding-top: 207px;
+  font: 16px/26px "Aleo", "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+.choose .description p:nth-of-type(1) {
+  padding-top: 62px;
+}
+.choose .description p:nth-of-type(2) {
+  padding-top: 26px;
+}
+.choose .preview__1 {
+  padding-left: 80px;
+  padding-top: 120px;
+  text-align: left;
+}
+.choose .preview__2 {
+  text-align: right;
+}
+
+.work {
+  height: 336px;
+  background: url("../img/Shape 1.svg") no-repeat 50% 18% #333333;
+  padding-top: 100px;
+}
+.work .wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.work .box {
+  text-align: center;
+}
+.work .box .svg {
+  display: inline-block;
+  margin: 0 auto;
+}
+.work .box .svg svg {
+  background: #333333;
+}
+.work .box p {
+  font: 16px/26px "Aleo", "Times New Roman", serif;
+  font-size: 2.25rem;
+  padding-top: 25px;
+}
+
+.section > * {
+  height: 700px;
+}
+.section .house {
+  background: url("../img/smart-house.jpg") no-repeat 50% #333333;
+}
+.section .cape {
+  background: url("../img/cape.jpg") no-repeat 50% #333333;
+}
+.section .row {
+  padding-top: 229px;
+}
+.section .description {
+  font-size: 1rem;
+  background: #333333;
+  opacity: 0.9;
+  padding: 47px 30px;
+}
+.section .description_house {
+  margin-right: 15px;
+}
+.section .description_cape {
+  margin-left: 15px;
+}
+.section .description h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.section .description :nth-child(2) {
+  padding-top: 25px;
+}
+.section .description p {
+  padding-top: 18px;
+}
+
+.testimonial {
+  height: 733px;
+  background: url("../img/man.jpg") no-repeat 50% #333333;
+}
+.testimonial h1 {
+  font: 16px/26px "Aleo", "Times New Roman", serif;
+  font-size: 2.25rem;
+  padding-top: 123px;
+  padding-bottom: 98px;
+  text-align: center;
+}
+.testimonial .review {
+  font-size: 0;
+  height: 284px;
+}
+.testimonial .review > * {
+  display: inline-block;
+}
+.testimonial .review__text {
+  width: 59%;
+  height: 100%;
+  vertical-align: top;
+  font-size: 1rem;
+  background: #333333;
+  opacity: 0.9;
+  padding: 48px 40px 48px 60px;
+}
+.testimonial .review h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.testimonial .review p {
+  padding-top: 38px;
+  word-break: break-all;
+  letter-spacing: -1px;
+}
+.testimonial .review i {
+  position: relative;
+  top: -12px;
+  float: left;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  color: #5474fd;
+  font-size: 1.25rem;
+}
+
+.footer {
+  height: 300px;
+  background: #333333;
+}
+.footer .nav-society {
+  width: 160px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .nav-society a:hover {
+  color: #5474fd;
+}
+
+/*# sourceMappingURL=main.css.map */
