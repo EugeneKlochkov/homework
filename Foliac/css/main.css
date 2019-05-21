@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@font-face {
+  font-family: "Big John";
+  src: url("../fonts/big_john-webfont.woff2") format("woff2"), url("../fonts/big_john-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Slim Joe";
+  src: url("../fonts/slim_joe-webfont.woff2") format("woff2"), url("../fonts/slim_joe-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.about button, .hero button {
+  text-transform: uppercase;
+  border: 2px solid #3c4955;
+  padding: 12px 20px;
+  border-radius: 3px;
+  background: none;
+  font-weight: 700;
+  color: #3c4955;
+}
+.about button:hover, .hero button:hover {
+  border-color: #48bf72;
+  color: #48bf72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 16px/1.5 "Lato", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+/*Сетка*/
+.row {
+  font-size: 0;
+}
+
+.row [class^=col] {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.col-2 {
+  width: 50%;
+  padding: 20px 125px 20px 20px;
+}
+
+/*Сетка конец*/
+.inner {
+  max-width: 1140px;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 650px;
+  background: url("../img/computer.jpg") no-repeat 50% #3c4955;
+  background-size: cover;
+  color: #ffffff;
+}
+.hero header {
+  font-size: 0;
+  padding-top: 36px;
+}
+.hero header .logo,
+.hero header .menu {
+  display: inline-block;
+}
+.hero header .logo {
+  vertical-align: middle;
+  width: 20%;
+}
+.hero header .menu {
+  width: 80%;
+  font-size: 1rem;
+  text-align: right;
+  padding-top: 5px;
+}
+.hero header .menu__item {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 50px;
+}
+.hero header .menu__item:nth-child(n+2):before {
+  content: url("../img/separator.png");
+  margin-right: 50px;
+}
+.hero header .menu__item:hover {
+  color: #48bf72;
+}
+.hero h1, .hero p, .hero form {
+  text-align: center;
+}
+.hero h1 {
+  font-family: "Big John", "Arial", sans-serif;
+  font-size: 2.875rem;
+  padding-top: 143px;
+}
+.hero p {
+  font-family: "Slim Joe", "Arial", sans-serif;
+  font-size: 1.875rem;
+  padding-top: 5px;
+}
+.hero form {
+  padding-top: 34px;
+}
+.hero button {
+  border-color: #48bf72;
+  color: #48bf72;
+}
+.hero button:hover {
+  box-shadow: 0 0 25px 0 #48bf72 inset;
+}
+
+.portfolio {
+  background: #cccccc;
+}
+.portfolio .button-group, .portfolio .category {
+  text-align: center;
+}
+.portfolio .button-group {
+  font: 700 16px/1.5 "Lato", "Arial", sans-serif;
+  color: #3c4955;
+  padding: 50px 0;
+}
+.portfolio .button-group .button {
+  padding: 10px 15px;
+  background: #eaeaea;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin: 0 7px;
+}
+.portfolio .button-group .button:hover, .portfolio .button-group .button.is-checked {
+  background: #48bf72;
+  color: #ffffff;
+}
+.portfolio .category {
+  padding-bottom: 30px;
+}
+.portfolio .category:after, .portfolio .category:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+.portfolio .category__item {
+  float: left;
+  display: block;
+  padding: 5px;
+  width: 350px;
+  position: relative;
+}
+.portfolio .category__item img {
+  width: 100%;
+}
+.portfolio .category__item:hover:after {
+  content: "Заказать макет";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #48bf72;
+  opacity: 0.9;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.about {
+  height: 500px;
+  background: url("../img/men-computer.jpg") no-repeat 50% #3c4955;
+  background-size: cover;
+}
+.about h2 {
+  padding-top: 60px;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.about h3 {
+  line-height: 1.2;
+  font-size: 1.375rem;
+}
+.about p {
+  padding-top: 34px;
+  line-height: 1.6;
+}
+.about form {
+  padding-top: 32px;
+}
+.contact {
+  width: 700px;
+  height: 564px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+.contact h2 {
+  padding-top: 48px;
+  text-transform: uppercase;
+  font: 1.625rem "Big John", "Arial", sans-serif;
+  color: #48bf72;
+}
+.contact form {
+  padding-top: 50px;
+  font-size: 0;
+}
+.contact label {
+  font-size: 0;
+}
+.contact label:nth-child(2) {
+  padding-left: 8px;
+}
+.contact label input {
+  font: 700 16px/1.5 "Lato", "Arial", sans-serif;
+  border: 2px solid #3c4955;
+  background: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #3c4955;
+  width: 290px;
+  height: 50px;
+  vertical-align: top;
+  position: relative;
+  left: -13px;
+  padding-left: 20px;
+  outline: none;
+}
+.contact label input::-webkit-input-placeholder, .contact label input::-moz-placeholder, .contact label input:-moz-placeholder, .contact label input:-ms-input-placeholder {
+  font-weight: 700;
+}
+.contact .comment {
+  padding-top: 30px;
+}
+.contact .comment__text {
+  font: 700 16px/1.5 "Lato", "Arial", sans-serif;
+  border: 2px solid #3c4955;
+  background: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #3c4955;
+  height: 228px;
+  width: 644px;
+  position: relative;
+  left: -13px;
+  padding-left: 20px;
+  padding-top: 10px;
+  outline: none;
+}
+.contact button {
+  width: 700px;
+  height: 50px;
+  background: #48bf72;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font: 700 14px/1.5 "Lato", "Arial", sans-serif;
+  margin-top: 32px;
+}
+
+.footer {
+  background: #3c4955;
+  height: 200px;
+}
+.footer p {
+  display: inline-block;
+  padding-top: 88px;
+}
+.footer p span {
+  font-weight: 700;
+}
+.footer .society {
+  float: right;
+  padding-top: 74px;
+}
+.footer .society__item {
+  margin-left: 37px;
+}
+
+/*# sourceMappingURL=main.css.map */

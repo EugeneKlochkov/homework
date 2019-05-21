@@ -1,0 +1,354 @@
+@font-face {
+  font-family: 'Big John';
+  src: url('../fonts/big_john-webfont.woff2') format('woff2'),
+  url('../fonts/big_john-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Slim Joe';
+  src: url('../fonts/slim_joe-webfont.woff2') format('woff2'),
+  url('../fonts/slim_joe-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+$bgDark: #3c4955;
+$colorLight: #ffffff;
+$green: #48bf72;
+$gray: #3c4955;
+
+%btn {
+  text-transform: uppercase;
+  border: 2px solid $gray;
+  padding: 12px 20px;
+  border-radius: 3px;
+  background: none;
+  font-weight: 700;
+  color: $gray;
+
+  &:hover {
+    border-color: $green;
+    color: $green;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 16px/1.5 'Lato', 'Arial', sans-serif;
+  color: $colorLight;
+}
+
+/*Сетка*/
+.row {
+  font-size: 0;
+}
+
+.row [class^=col] {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  //word-break: break-all;
+}
+
+.col-2 {
+  width: 50%;
+  padding: 20px 125px 20px 20px;
+}
+
+/*Сетка конец*/
+
+.inner {
+  max-width: 1140px;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 650px;
+  background: url("../img/computer.jpg") no-repeat 50% $bgDark;
+  background-size: cover;
+  color: $colorLight;
+
+  header {
+    font-size: 0;
+    padding-top: 36px;
+
+
+    .logo,
+    .menu {
+      display: inline-block;
+    }
+
+    .logo {
+      vertical-align: middle;
+      width: 20%;
+    }
+
+    .menu {
+      width: 80%;
+      font-size: 1rem;
+      text-align: right;
+      padding-top: 5px;
+    }
+
+    .menu__item {
+      display: inline-block;
+      text-decoration: none;
+      color: $colorLight;
+      margin-left: 50px;
+
+      &:nth-child(n+2):before {
+        content: url("../img/separator.png");
+        margin-right: 50px;
+      }
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+  }
+
+  h1, p, form {
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'Big John', 'Arial', sans-serif;
+    font-size: 2.875rem;
+    padding-top: 143px;
+  }
+
+  p {
+    font-family: 'Slim Joe', 'Arial', sans-serif;
+    font-size: 1.875rem;
+    padding-top: 5px;
+
+  }
+
+  form {
+    padding-top: 34px;
+  }
+
+  button {
+    @extend %btn;
+    border-color: $green;
+    color: $green;
+
+    &:hover {
+      box-shadow: 0 0 25px 0 $green inset;
+    }
+  }
+}
+
+.portfolio {
+  background: #cccccc;
+
+  .button-group, .category {
+    text-align: center;
+  }
+
+  .button-group {
+    font: 700 16px/1.5 'Lato', 'Arial', sans-serif;
+    color: $gray;
+    padding: 50px 0;
+
+    .button {
+      padding: 10px 15px;
+      background: #eaeaea;
+      border: none;
+      border-radius: 3px;
+      outline: none;
+      margin: 0 7px;
+
+      &:hover, &.is-checked {
+        background: $green;
+        color: $colorLight;
+      }
+    }
+  }
+  .category {
+    padding-bottom: 30px;
+  }
+  .category:after, .category:before {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .category__item {
+    float: left;
+    display: block;
+    padding: 5px;
+    width: 350px;
+    position: relative;
+    img {
+      width: 100%;
+    }
+
+    &:hover:after {
+      content: 'Заказать макет';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $green;
+      opacity: .9;
+      font-size: 30px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+.about {
+  height: 500px;
+  background: url("../img/men-computer.jpg") no-repeat 50% $bgDark;
+  background-size: cover;
+
+  h2 {
+    padding-top: 60px;
+    font-size: 1.875rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    line-height: 1.2;
+    font-size: 1.375rem;
+  }
+
+  p {
+    padding-top: 34px;
+    line-height: 1.6;
+  }
+
+  form {
+    padding-top: 32px;
+  }
+
+  button {
+    @extend %btn;
+  }
+}
+
+.contact {
+  width: 700px;
+  height: 564px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+
+  h2 {
+    padding-top: 48px;
+    text-transform: uppercase;
+    font: 1.625rem 'Big John', 'Arial', sans-serif;
+    color: $green;
+
+  }
+
+  form {
+    padding-top: 50px;
+    font-size: 0;
+  }
+
+  label {
+    font-size: 0;
+
+    &:nth-child(2) {
+      padding-left: 8px;
+    }
+
+    input {
+      font: 700 16px/1.5 'Lato', 'Arial', sans-serif;
+
+      border: 2px solid $gray;
+      background: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: $gray;
+      width: 290px;
+      height: 50px;
+      vertical-align: top;
+      position: relative;
+      left: -13px;
+      padding-left: 20px;
+      outline: none;
+
+      &::-webkit-input-placeholder,
+      &::-moz-placeholder,
+      &:-moz-placeholder,
+      &:-ms-input-placeholder {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .comment {
+    padding-top: 30px;
+
+    &__text {
+      font: 700 16px/1.5 'Lato', 'Arial', sans-serif;
+      border: 2px solid $gray;
+      background: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: $gray;
+      height: 228px;
+      width: 644px;
+      position: relative;
+      left: -13px;
+      padding-left: 20px;
+      padding-top: 10px;
+      outline: none;
+
+    }
+  }
+
+  button {
+    width: 700px;
+    height: 50px;
+    background: $green;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: $colorLight;
+    font: 700 14px/1.5 'Lato', 'Arial', sans-serif;
+    margin-top: 32px;
+  }
+
+}
+
+.footer {
+  background: $gray;
+  height: 200px;
+
+  p {
+    display: inline-block;
+    padding-top: 88px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .society {
+    float: right;
+    padding-top: 74px;
+
+    &__item {
+      margin-left: 37px;
+    }
+  }
+}
