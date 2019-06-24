@@ -3,7 +3,7 @@
 body {
     font: 16px/1.5 'Nunito Sans', Arial, sans-serif;
     color: darkblue;
-    //background: url("../img/background.gif");
+    /*background: url("../img/background.gif");*/
     background-size: cover;
 }
 header, main {
